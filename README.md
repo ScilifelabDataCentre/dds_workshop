@@ -7,6 +7,6 @@ The documentation for different sessions can be found in the `docs` directory.
 
 Before starting, clone this repository in your computer:
 
-~~~~
+~~~
 git clone https://github.com/ScilifelabDataCentre/dds_workshop.git
 ~~~

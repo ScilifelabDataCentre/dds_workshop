@@ -32,7 +32,7 @@ When the project is created, you should get an output similar to the one below. 
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
- - [ ] TASK: Run the create project command, remember to change the fails of **title**, **description** and **pi**
+ - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
 # Upload data
 
@@ -123,7 +123,7 @@ dds data get --source "<1st file or directory>" --source "<2nd file or directory
 ~~~
 
  - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
- - [ ] TASK: Download the project contents, and verify that they are the same. You can download data with your unit admins account
+ - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
  - [ ] Optional: Use another email you may have to invite yourself as a researcher, you don't need to register again.
 
 
