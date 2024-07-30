@@ -34,6 +34,8 @@ When the project is created, you should get an output similar to the one below. 
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges). Or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the documentation link just above.
+
 # Upload data
 
 By default, the project will be "In progress" (which means that data can be uploaded, but not downloaded).
@@ -62,6 +64,8 @@ The general upload command is [`dds data put`.](https://scilifelabdatacentre.git
 ~~~
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
+
+> There are a number of other optional flags, which cab be found on the documentation link just above.
 
 > NOTE: As of today, DDS can break when there are heavy uploads. We are working on fixing it, but on the meantime, we recommned to ZIP files when the uploads are big (Hundreds of files).
 
