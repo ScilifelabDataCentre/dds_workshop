@@ -15,9 +15,9 @@ dds auth login
 
 Examples on how to use it are available in the [documentation.](https://scilifelabdatacentre.github.io/dds_cli/examples/#authentication-dds-auth)
 
-![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-auth-login.svg)
+![Screenshot of the login steps](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-auth-login.svg)
 
- - [ ] TASK: Find the email and create an account, login filling your information. Note that the password will not being shown while you are typing it.
+ - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it.
 
 # Create a project
 
@@ -25,12 +25,12 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 dds project create --title "<Project Title>" --description "<Project Description>" --principal-investigator "<Email to PI>"
 ~~~
 
-> The email specified in the option `--principal-investigator` does not receive any emails; It’s only for information purposes at this time.
+> The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
 
 [Docs.](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create)
 When the project is created, you should get an output similar to the one below. Remember the **Project ID**
 
-![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
+![Screenshot of a sucessfull project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
@@ -38,7 +38,7 @@ When the project is created, you should get an output similar to the one below. 
 
 By default, the project will be "In progress" (which means that data can be uploaded, but not downloaded).
 
-Check the folder which contains the data, inside this repository.
+Check the folder which contains the data, on Mac/Linux, inside this repository.
 ~~~
 ls -R data/
 ~~~
@@ -55,12 +55,16 @@ ls -R data/
 > data/example_directory_2/sub_directory_2: example_file_3.txt     
 > example_file_4.txt
 
+On windows, you can use the `dir` command or manually explore the structure through the file explored.
 
 
 The general upload command is [`dds data put`.](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put)
 ~~~
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
+
+> NOTE: As of today, DDS can break when there are heavy uploads. We are working on fixing it, but on the meantime, we recommned to ZIP files when the uploads are big (Hundreds of files).
+
 
  - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
 
@@ -77,14 +81,15 @@ You can interactively list the contents of a project with the [`ls` command:](ht
 dds data ls --project "<Project ID>"
 ~~~
 
-However, You can view all files and directories in a project as a tree structure, using the `--tree` option.
+However, you can view all files and directories in a project as a tree structure, using the `--tree` option.
 
 ~~~
 dds data ls --project "<Project ID>" --tree
 ~~~
-![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-data-ls-tree.svg)
 
- - [ ] TASK: Verify that all the data has being uploaded sucesfully
+![Screenshot of the files structure in the project](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-data-ls-tree.svg)
+
+ - [ ] TASK: Verify that all the data has being uploaded succesfully.
 
 # Release project and download data
 
