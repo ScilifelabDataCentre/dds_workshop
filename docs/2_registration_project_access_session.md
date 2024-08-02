@@ -38,6 +38,9 @@ When the project is created, you should get an output similar to the one below. 
 
 # Upload data
 
+> When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only ulpload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
+
+
 By default, the project will be "In progress" (which means that data can be uploaded, but not downloaded).
 
 Check the folder which contains the data, on Mac/Linux, inside this repository.
@@ -97,8 +100,9 @@ dds data ls --project "<Project ID>" --tree
 
 # Release project and download data
 
+> Currently DDS does not support to resume downloads, if your download is interrupted you will need to restart it.
 
-1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`.
+1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is stil in progress they will get an error.
 
 ~~~
 dds project status release --project "<Project ID>"
@@ -106,6 +110,8 @@ dds project status release --project "<Project ID>"
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
 ##
+
+After releasing the project, any curent researcher associated with the project will recieve a notification by email.
 
 2. To [invite researchers](dds%20user%20add%20%5BEmail%20address%5D%20--role "&lt;Account role&gt;quot; --project quot;&lt;Project ID&gt;") that will download the data to the project:
 
@@ -118,6 +124,11 @@ or
 ~~~
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
+
+>There is no practical difference between this two command in this use case. However, as mentioned above, it is possible to automatically invite researchers when creating  a project. \
+`dds project create (...) --researcher [Email address]`
+
+
 
 ##
 3. To download the full project contents
