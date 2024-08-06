@@ -108,12 +108,12 @@ dds data ls --project "<Project ID>" --tree
 dds project status release --project "<Project ID>"
 ~~~
 
-![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
+![Message shown after project release](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
 ##
 
 After releasing the project, any curent researcher associated with the project will recieve a notification by email.
 
-2. To [invite researchers](dds%20user%20add%20%5BEmail%20address%5D%20--role "&lt;Account role&gt;quot; --project quot;&lt;Project ID&gt;") that will download the data to the project:
+2. To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant) that will download the data to the project:
 
 ~~~
 dds project access grant --project "<Project ID>" --email "<email>"
@@ -131,7 +131,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 
 ##
-3. To download the full project contents
+3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents
 ~~~
 dds data get --get-all --project "<Project ID>" 
 ~~~
@@ -145,6 +145,39 @@ dds data get --source "<1st file or directory>" --source "<2nd file or directory
  - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
  - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
  - [ ] Optional: Use another email you may have to invite yourself as a researcher, you don't need to register again.
+
+
+##
+4. Download specific contents
+
+There could be some scenarios where you don't need to get the full project contents. For that, there are two options you can use. Above, the `--source` option was explained and used. You can also use the `--source-path-file` one.
+
+Here are examples on how to use them based on our sample data:
+
+~~~
+dds data get 
+    --source "data/example_directory_1/sub_directory_1/"
+    --source "data/example_directory_2/sub_directory_2/example_file_3.txt" 
+    --source "data/example_directory_2/example_file_5.txt" 
+    --project "<Project ID>"
+~~~
+
+You can pack all this different source routes with the spf option:
+
+~~~
+dds data get 
+    --source-path-file spf.txt
+    --project "<Project ID>"
+~~~
+
+Where spf.txt is the path to an **existing** file which has the following format:
+
+>cat spf.txt
+~~~
+data/example_directory_1/sub_directory_1/
+data/example_directory_2/sub_directory_2/example_file_3.txt
+data/example_directory_2/example_file_5.txt
+~~~
 
 
  # Invite other Unit Staff
