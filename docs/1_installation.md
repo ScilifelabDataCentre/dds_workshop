@@ -9,11 +9,13 @@ They differ slightly between Mac or Windows so, follow the section you need. Onc
 ~~~
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-version.svg)
-## Point to testing
+## Using the Test instance of DDS
 
-When you run any command, you can notice that, on top of the output, there is a URL, which by default is 
+By default, the client uses the production instance with the URL: 
 
 > `https://delivery.scilifelab.se`
+
+You can see that URL in the output of any command you run.
  
  ![](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-help-2.svg)
 To set the CLI to point to the test instance you can run the following command in the terminal / command prompt / PowerShell (depending on your OS, see below).

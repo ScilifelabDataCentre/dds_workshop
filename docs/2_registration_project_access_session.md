@@ -70,8 +70,9 @@ dds data put --project "<Project ID>" --source "<File or directory to upload>"
 
 > There are a number of other optional flags, which cab be found on the documentation link just above.
 
-> NOTE: As of today, DDS can break when there are heavy uploads. We are working on fixing it, but on the meantime, we recommned to ZIP files when the uploads are big (Hundreds of files).
-
+> NOTE: As of today, DDS can have performance issues and upload failures when uploading many small files. We are working
+> on fixing it, but in the meantime, we recommend that you archive (with ZIP or RAR, no compression required) deliveries
+> when the delivered data consists of hundreds or thousands of small files.
 
  - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
 
@@ -125,8 +126,8 @@ or
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
 
->There is no practical difference between this two command in this use case. However, as mentioned above, it is possible to automatically invite researchers when creating  a project. \
-`dds project create (...) --researcher [Email address]`
+> There is no practical difference between these two commands for this use case. However, as mentioned above, it is 
+> possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
 
 
