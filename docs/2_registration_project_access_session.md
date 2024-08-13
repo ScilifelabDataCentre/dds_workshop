@@ -19,6 +19,23 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
  - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it.
 
+ # Invite other Unit Staff
+
+When you are the first Unit Admin invited to a new unit, one of the first things to do will be to invite another Unit Admin. Otherwise the system will not allow you to create any projects and will see the following error message if you try to:
+
+~~~
+ERROR    Failed to create project: Your unit does not have enough Unit Admins. At least two Unit Admins are required for a project to be created.
+~~~
+To invite other unit staff, Unit Admins or Unit Personnel (Remember the diagram with the permissions showed in the presentation), you use the `dds user add` command like this:
+
+~~~
+dds user add [Email address] --role "Unit Admin"
+~~~
+or 
+~~~
+dds user add [Email address] --role "Unit Personnel"
+~~~
+
 # Create a project
 
 ~~~
@@ -181,16 +198,3 @@ data/example_directory_2/example_file_5.txt
 ~~~
 
 
- # Invite other Unit Staff
-
-You can invite other unit staff, Unit Admins or Unit Personnel. (Remember the diagram with the permissions showed in the presentation)
-
-The command is similar to the one used before
-
-~~~
-dds user add [Email address] --role "Unit Admin"
-~~~
-or 
-~~~
-dds user add [Email address] --role "Unit Personnel"
-~~~
