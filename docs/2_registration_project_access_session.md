@@ -154,11 +154,6 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 dds data get --get-all --project "<Project ID>" 
 ~~~
 
-You can also use the `--source` option to specify which file or directory you want to download within the project. If you want to download multiple individual files or directories, specify the `--source` option multiple times.
-
-~~~
-dds data get --source "<1st file or directory>" --source "<2nd file or directory>" [... etc] --project "<Project ID>"
-~~~
 
  - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
  - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
@@ -168,9 +163,16 @@ dds data get --source "<1st file or directory>" --source "<2nd file or directory
 ##
 4. Download specific contents
 
-There could be some scenarios where you don't need to get the full project contents. For that, there are two options you can use. Above, the `--source` option was explained and used. You can also use the `--source-path-file` one.
+There could be some scenarios where you don't need to get the full project contents. For that, there are two options you can use. You can use the `--source` option to specify which file or directory you want to download within the project. If you want to download multiple individual files or directories, specify the `--source` option multiple times.
 
-Here are examples on how to use them based on our sample data:
+~~~
+dds data get --source "<1st file or directory>" --source "<2nd file or directory>" [... etc] --project "<Project ID>"
+~~~
+
+You can also use the `--source-path-file` option, which allows you to put all the different files and/or directories in a text file and pass this file
+to the uploading command.
+
+Here are examples on how to use these two options based on our sample data:
 
 ~~~
 dds data get 
@@ -188,7 +190,7 @@ dds data get
     --project "<Project ID>"
 ~~~
 
-Where spf.txt is the path to an **existing** file which has the following format:
+Where spf.txt is the path to a file you have created with the following format:
 
 >cat spf.txt
 ~~~
