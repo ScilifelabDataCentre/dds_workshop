@@ -143,8 +143,8 @@ or
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
 
-> There is no practical difference between these two commands for this use case. However, as mentioned above, it is 
-> possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
+> There is no practical difference between these two commands for this use case. As mentioned above, it is 
+> also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
 
 
