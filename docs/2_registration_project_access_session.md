@@ -85,7 +85,7 @@ The general upload command is [`dds data put`.](https://scilifelabdatacentre.git
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
 
-> There are a number of other optional flags, which cab be found on the documentation link just above.
+> There are a number of other optional flags, which can be found on the documentation link just above.
 
 > NOTE: As of today, DDS can have performance issues and upload failures when uploading many small files. We are working
 > on fixing it, but in the meantime, we recommend that you archive (with ZIP or RAR, no compression required) deliveries
