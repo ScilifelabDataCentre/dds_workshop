@@ -1,7 +1,5 @@
 # 1. Installation
 
-In order to manage projects and upload/download data, you need to install the DDS command line tool `dds-cli`.
-
 The instructions for installation are available in our documentation, [accessible here.](https://scilifelabdatacentre.github.io/dds_cli/#install-the-command-line-interface-cli-dds-cli)
 
 They differ slightly depending on your operating system, so follow the section you need (MacOS, Windows or Linux distributions). Once installed, verify it by running:
@@ -11,7 +9,10 @@ They differ slightly depending on your operating system, so follow the section y
 ~~~
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-version.svg)
+
 ## Using the Test instance of DDS
+
+In order to test the DDS functionality, you need to tell the client to use the correct URL.
 
 By default, the client uses the production instance with the URL: 
 
