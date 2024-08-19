@@ -133,7 +133,7 @@ dds project status release --project "<Project ID>"
 ![Message shown after project release](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
 ##
 
-After releasing the project, any curent researcher associated with the project will receieve a notification by email.
+After releasing the project, any current researcher associated with the project will receive a notification by email.
 
 ##
 3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
