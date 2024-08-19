@@ -91,7 +91,7 @@ On Windows, you can use the `dir` command or manually explore the structure thro
 
 > When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only ulpload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
 
-If you have forgotten the project ID, you can list all active projects you have access with the ls command, [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls) here.
+If you have forgotten the project ID, you can list all active projects to which you have access with the `ls` command, [see documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls) here.
 
 ~~~
 dds project ls
