@@ -47,7 +47,7 @@ dds project create --title "<Project Title>" --description "<Project Description
 
 > The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
 
-When the project is created, you should get an output similar to the one below. Write down and try to remember the **Project ID**, as you will need it to access the project later on.
+When the project is created, you should get an output similar to the one below. Record the **Project ID**, as you will need it to access the project later on.
 
 ![Screenshot of a sucessful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
