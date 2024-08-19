@@ -1,8 +1,10 @@
 # 1. Installation
 
+In order to manage projects and upload/download data, you need to install the DDS command line tool `dds-cli`.
+
 The instructions for installation are available in our documentation, [accessible here.](https://scilifelabdatacentre.github.io/dds_cli/#install-the-command-line-interface-cli-dds-cli)
 
-They differ slightly between Mac or Windows so, follow the section you need. Once installed, verify it by running:
+They differ slightly depending on your operating system, so follow the section you need (MacOS, Windows or Linux distributions). Once installed, verify it by running:
 
 ~~~
     dds --version
