@@ -84,7 +84,7 @@ ls -R data/
 > data/example_directory_2/sub_directory_2: example_file_3.txt     
 > example_file_4.txt
 
-On windows, you can use the `dir` command or manually explore the structure through the file explorer.
+On Windows, you can use the `dir` command or manually explore the structure through the File Explorer.
 
 
  - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
