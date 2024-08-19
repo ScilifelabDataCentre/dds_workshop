@@ -49,7 +49,7 @@ dds project create --title "<Project Title>" --description "<Project Description
 
 When the project is created, you should get an output similar to the one below. Record the **Project ID**, as you will need it to access the project later on.
 
-![Screenshot of a sucessful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
+![Screenshot of a successful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
