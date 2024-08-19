@@ -99,7 +99,7 @@ dds project ls
 
 > NOTE: As of today, DDS can have performance issues and upload failures when uploading many small files. We are working
 > on fixing it, but in the meantime, we recommend that you archive (with ZIP or RAR) deliveries when the delivered data consists of hundreds or thousands of small files.
-> On Mac/Linux this can be archieved with 
+> On Mac/Linux this can be achieved with:
 > `tar -czf data.zip data/` for compression. 
 > `tar -xzf data.zip` for decompression.  
 
