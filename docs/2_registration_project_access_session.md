@@ -1,5 +1,6 @@
 # 2. Registration and project access
 
+## A. Registration
 
 
 You should have received a registration link from 
@@ -19,7 +20,7 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
  - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it.
 
- # Invite other Unit Staff
+#### Invite other Unit Staff
 
 When you are the first Unit Admin invited to a new unit, one of the first things to do will be to invite another Unit Admin. Otherwise the system will not allow you to create any projects and will return the following error message if you try to:
 
@@ -46,14 +47,13 @@ dds project create --title "<Project Title>" --description "<Project Description
 
 > The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
 
-[Docs.](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create)
-When the project is created, you should get an output similar to the one below. Remember the **Project ID**
+When the project is created, you should get an output similar to the one below. Write down and try to remember the **Project ID**, as you will need it to access the project later on.
 
 ![Screenshot of a sucessfull project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
-> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the documentation link just above.
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) link here.
 
 # Upload data
 
