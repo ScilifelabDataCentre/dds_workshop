@@ -124,7 +124,7 @@ dds data ls --project "<Project ID>" --tree
 
 > Currently DDS does not support to resume downloads, if your download is interrupted you will need to restart it.
 
-1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is stil in progress they will get an error.
+1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is still in progress they will get an error.
 
 ~~~
 dds project status release --project "<Project ID>"
@@ -133,7 +133,7 @@ dds project status release --project "<Project ID>"
 ![Message shown after project release](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
 ##
 
-After releasing the project, any curent researcher associated with the project will recieve a notification by email.
+After releasing the project, any curent researcher associated with the project will receieve a notification by email.
 
 ##
 3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
