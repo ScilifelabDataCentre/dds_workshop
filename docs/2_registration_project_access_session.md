@@ -65,7 +65,7 @@ The general upload command is [`dds data put`.](https://scilifelabdatacentre.git
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
 
-> There are a number of other optional flags, which can be found on the [documentation](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put) link here.
+> There are a number of other optional flags, which can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put) link here.
 
 Check the folder which contains the data, on Mac/Linux, inside this repository.
 ~~~
