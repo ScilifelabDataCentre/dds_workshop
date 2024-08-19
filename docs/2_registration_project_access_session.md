@@ -53,7 +53,7 @@ When the project is created, you should get an output similar to the one below. 
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
-> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) link here.
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
 # Upload data
 
