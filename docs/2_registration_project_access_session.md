@@ -37,7 +37,7 @@ or
 dds user add [Email address] --role "Unit Personnel"
 ~~~
 
-#### Create a project
+# Create a project
 
 The command for creating project has the following general syntax:
 
@@ -47,15 +47,14 @@ dds project create --title "<Project Title>" --description "<Project Description
 
 > The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
 
-When the project is created, you should get an output similar to the one below. Record the **Project ID**, as you will need it to access the project later on.
+[Docs.](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create)
+When the project is created, you should get an output similar to the one below. Remember the **Project ID**
 
-![Screenshot of a successful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
-
-> You can always retrieve the the **Project ID** using the command `dds ls` and then setting meaningful `--title` and `--description` will prove useful for you.
+![Screenshot of a sucessfull project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
-> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the documentation link just above.
 
 # Upload data
 
