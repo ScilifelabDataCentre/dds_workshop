@@ -2,7 +2,7 @@
 
 The instructions for installation are available in our documentation, [accessible here.](https://scilifelabdatacentre.github.io/dds_cli/#install-the-command-line-interface-cli-dds-cli)
 
-They differ slightly depending on your operating system, so follow the section you need (MacOS, Windows or Linux distributions). Once installed, verify it by running:
+They differ slightly depending on your operating system, so follow the section you need (MacOS, Windows or Linux). Once installed, verify it by running:
 
 ~~~
     dds --version
