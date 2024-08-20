@@ -12,7 +12,7 @@ They differ slightly depending on your operating system, so follow the section y
 
 ## Using the Test instance of DDS
 
-In order to test the DDS functionality, you need to tell the client to use the correct URL.
+For today's hands on session you will be using the testing instance on DDS, instead of the the production one. In order to do this, you need to tell the client to use the correct URL.
 
 By default, the client uses the production instance with the URL: 
 
