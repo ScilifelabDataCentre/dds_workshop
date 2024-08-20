@@ -2,14 +2,17 @@
 
 The instructions for installation are available in our documentation, [accessible here.](https://scilifelabdatacentre.github.io/dds_cli/#install-the-command-line-interface-cli-dds-cli)
 
-They differ slightly between Mac or Windows so, follow the section you need. Once installed, verify it by running:
+They differ slightly depending on your operating system, so follow the section you need (MacOS, Windows or Linux). Once installed, verify it by running:
 
 ~~~
     dds --version
 ~~~
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-version.svg)
+
 ## Using the Test instance of DDS
+
+For today's hands on session you will be using the testing instance on DDS, instead of the the production one. In order to do this, you need to tell the client to use the correct URL.
 
 By default, the client uses the production instance with the URL: 
 
