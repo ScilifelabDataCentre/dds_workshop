@@ -36,7 +36,9 @@ or
 dds user add [Email address] --role "Unit Personnel"
 ~~~
 
-# Create a project
+## B. Project Access
+
+#### Create a project
 
 The command for creating project has the following general syntax:
 
@@ -46,18 +48,17 @@ dds project create --title "<Project Title>" --description "<Project Description
 
 > The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
 
-[Docs.](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create)
-When the project is created, you should get an output similar to the one below. Remember the **Project ID**
+When the project is created, you should get an output similar to the one below. Record the **Project ID**, as you will need it to access the project later on.
 
-![Screenshot of a sucessfull project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
+![Screenshot of a successful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
+
+> You can always retrieve the the **Project ID** using the command `dds ls` and then setting meaningful `--title` and `--description` will prove useful for you.
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
-> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher` to automatically invite researcher users to the project. The list and description can be found on the documentation link just above.
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
-# Upload data
-
-
+#### Upload data
 
 When created, the project will have status "In progress", which means that data can be uploaded, but not downloaded.
 
@@ -66,7 +67,7 @@ The general upload command is [`dds data put`.](https://scilifelabdatacentre.git
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
 
-> There are a number of other optional flags, which can be found on the documentation link just above.
+> There are a number of other optional flags, which can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put) link here.
 
 Check the folder which contains the data, on Mac/Linux, inside this repository.
 ~~~
@@ -85,24 +86,26 @@ ls -R data/
 > data/example_directory_2/sub_directory_2: example_file_3.txt     
 > example_file_4.txt
 
-On windows, you can use the `dir` command or manually explore the structure through the file explored.
+On Windows, you can use the `dir` command or manually explore the structure through the File Explorer.
 
 
  - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
 
 > When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only ulpload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
 
-If you have forgotten the project ID, you can list all active projects you have access with ([Docs](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls)):
+If you have forgotten the project ID, you can list all active projects to which you have access with the `ls` command, [see documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls) here.
 
 ~~~
 dds project ls
 ~~~
 
 > NOTE: As of today, DDS can have performance issues and upload failures when uploading many small files. We are working
-> on fixing it, but in the meantime, we recommend that you archive (with ZIP or RAR, no compression required) deliveries
-> when the delivered data consists of hundreds or thousands of small files.
+> on fixing it, but in the meantime, we recommend that you archive (with ZIP or RAR) deliveries when the delivered data consists of hundreds or thousands of small files.
+> On Mac/Linux this can be achieved with:
+> `tar -czf data.zip data/` for compression. 
+> `tar -xzf data.zip` for decompression.  
 
-# List contents
+#### List contents
 
 You can interactively list the contents of a project with the [`ls` command:](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-ls)
 ~~~
@@ -119,11 +122,11 @@ dds data ls --project "<Project ID>" --tree
 
  - [ ] TASK: Verify that all the data has being uploaded succesfully.
 
-# Release project and download data
+#### Release project and download data
 
 > Currently DDS does not support to resume downloads, if your download is interrupted you will need to restart it.
 
-1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is stil in progress they will get an error.
+1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is still in progress they will get an error.
 
 ~~~
 dds project status release --project "<Project ID>"
@@ -132,11 +135,10 @@ dds project status release --project "<Project ID>"
 ![Message shown after project release](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
 ##
 
-After releasing the project, any curent researcher associated with the project will recieve a notification by email.
-
+After releasing the project, any current researcher associated with the project will receive a notification by email.
 
 ##
-3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents
+3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
 ~~~
 dds data get --get-all --project "<Project ID>" 
 ~~~
@@ -174,31 +176,29 @@ dds data get
 
 Where spf.txt is the path to a file you have created with the following format:
 
->cat spf.txt
 ~~~
 data/example_directory_1/sub_directory_1/
 data/example_directory_2/sub_directory_2/example_file_3.txt
 data/example_directory_2/example_file_5.txt
 ~~~
 
-2. In reality, the data you've uploaded will be downloaded by researchers.To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the commands:
+ - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
+ - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
 
-~~~
-dds project access grant --project "<Project ID>" --email "<email>"
-~~~
+#### Researchers
 
-or
+In real scenarios, the data you've uploaded will be downloaded by researchers. To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the command:
 
 ~~~
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
 
-> There is no practical difference between these two commands for this use case. As mentioned above, it is 
-> also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
 
- - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
- - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
+> It is also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
+
+
  - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
 
+> Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>" `
 
