@@ -1,5 +1,6 @@
 # 2. Registration and project access
 
+## A. Registration
 
 
 You should have received a registration link from 
@@ -19,7 +20,7 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
  - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it.
 
- # Invite other Unit Staff
+#### Invite other Unit Staff
 
 When you are the first Unit Admin invited to a new unit, one of the first things to do will be to invite another Unit Admin. Otherwise the system will not allow you to create any projects and will return the following error message if you try to:
 
