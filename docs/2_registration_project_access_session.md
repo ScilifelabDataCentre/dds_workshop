@@ -38,20 +38,20 @@ dds user add [Email address] --role "Unit Personnel"
 
 # Create a project
 
-The command for creating project has the following general syntax:
+In order to deliver data to your users, you first need to create a project. Create a project by running the dds project create command, which has the following general syntax:
 
 ~~~
 dds project create --title "<Project Title>" --description "<Project Description>" --principal-investigator "<Email to PI>"
 ~~~
 
-> The email specified in the option `--principal-investigator` does not receive any emails or creates any account; it’s only for information purposes at this time.
+> The email specified after the `--principal-investigator` option does not receive any emails or creates any account; it’s only for information purposes at this time.
 
 [Docs.](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create)
 When the project is created, you should get an output similar to the one below. Remember the **Project ID**
 
 ![Screenshot of a sucessfull project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
-> You can always retrieve the the **Project ID** using the command `dds ls` and then setting meaningful `--title` and `--description` will prove useful for you.
+> You can always retrieve the the **Project ID** using the command `dds ls`. Setting meaningful `--title` and `--description` when creating the project will be useful when searching your list of ongoing projects.
 
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
 
