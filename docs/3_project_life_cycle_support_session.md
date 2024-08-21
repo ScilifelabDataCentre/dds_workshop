@@ -49,3 +49,9 @@ If the data in a project needs to be updated, you need to change the status back
 - [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload.
 - [ ] Optional: If you did the previous optional task, try to download data again intill the project is still **In Progress**.
 
+## **Deleted**
+
+A project can be deleted in cases of incorrect project information or errors, and as result all the data from cloud as well as all the metadata from database get deleted irreversibly. This action is only possible for projects in **In Progress** that have not been previously released. The command for deleting a projects in `dds project delete`
+
+- [ ] TASK: Try to delete your project when it is in **In Progress** and **Available** and note the error messages.
+- [ ] TASK: Create a new project, upload some data in it and try to delete it without ever releasing it.
