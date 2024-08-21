@@ -2,7 +2,7 @@
 
 As we have seen, projects start their life as **In Progress** and end it as **Archived** or **Deleted**, going throuh **Available** and **Expired**
 
-## **In Progress** -> **Available** and back
+## *In Progress* to *Available* and back
 
 When created, a project will have status **In Progress**, which means that data can be uploaded and downloaded by Unit staff, but not downloaded by a Researcher. You need to change the status to **Available** in order for Reasearcher users to be able to download. The basic command for changing/checking the project status is `dds project status`:
 
@@ -49,9 +49,22 @@ If the data in a project needs to be updated, you need to change the status back
 - [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload.
 - [ ] Optional: If you did the previous optional task, try to download data again intill the project is still **In Progress**.
 
-## **Deleted**
+## *Deleted*
 
 A project can be deleted in cases of incorrect project information or errors, and as result all the data from cloud as well as all the metadata from database get deleted irreversibly. This action is only possible for projects in **In Progress** that have not been previously released. The command for deleting a projects in `dds project delete`
 
 - [ ] TASK: Try to delete your project when it is in **In Progress** and **Available** and note the error messages.
 - [ ] TASK: Create a new project, upload some data in it and try to delete it without ever releasing it.
+
+## *Expired*
+
+Projects can be **Available** a certain (chosen by the units) period of time, Days in Available (DiA). After that their status automatically changes to **Expired**. Data cannot be changed in this state, but the project can be re-released op to *two times*. After two re-releases, a project can only be archived
+
+## *Archived*
+
+A project can have status **Expired** a certain number of Days In Expired (DiE), after which the project status is automatically changed to **Archived**. All data is deleted, metadata is retained and this status is irreversible.
+
+Project archiving can be done manually by Unit account, using the commmand `dds project status archive`
+
+- [ ] TASK: Create a new project, upload some data in it and then archive it.
+- [ ] TASK: Use the project listing command with the option `--show-all` to see the list of projects including the archived ones.
