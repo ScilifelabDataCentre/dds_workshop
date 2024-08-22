@@ -72,8 +72,6 @@ When the project is created, you should get an output similar to the one below. 
 
 > There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
- - [ ] TASK: Run the create project command, remember to change the values for `--title`, `--description` and `--pi`
- - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm is shown in the output. Observe the information shown in the table.
 
 #### Upload data
 
@@ -136,7 +134,10 @@ dds data ls --project "<Project ID>" --tree
 
 ###### Sub-section taks
 
+
  - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
+
+ - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm is shown in the output. Observe the information shown in the table.
 
  - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
 
