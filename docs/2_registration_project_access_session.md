@@ -61,7 +61,14 @@ When the project is created, you should get an output similar to the one below. 
 
 #### Upload data
 
-When created, the project will have status "In progress", which means that data can be uploaded, but not downloaded.
+Go back to the Readme at the begining of the repository and follow the instruction to obtain the data for the hands-on session.
+
+[README](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md)
+
+ - [ ] TASK: Obtain the data.
+
+
+After creating a project, it will have status "In progress", which means that data can be uploaded, but not downloaded.
 
 The general upload command is [`dds data put`.](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put)
 ~~~
