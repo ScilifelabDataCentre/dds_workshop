@@ -1,6 +1,6 @@
 # Project life cycle
 
-As we have seen, projects start their life as **In Progress** and end it as **Archived** or **Deleted**, going throuh **Available** and **Expired**
+As we have seen, projects start their life as **In Progress** and end it as **Archived** or **Deleted**, going through **Available** and **Expired**
 
 ## Releasing and retracting project
 
