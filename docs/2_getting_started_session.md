@@ -243,7 +243,7 @@ dds --token-path .\Desktop\dds_cli_token.txt user info
 
 ###### Sub-section taks
 
- - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
+ - [ ] TASK: Release the project after making sure all the data was uploaded - remember to specify the correct project ID
  
  - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
 
