@@ -1,8 +1,8 @@
-# Project life cycle and support session
+# Project life cycle
 
 As we have seen, projects start their life as **In Progress** and end it as **Archived** or **Deleted**, going throuh **Available** and **Expired**
 
-## *In Progress* to *Available* and back
+## Releasing and retracting project
 
 When created, a project will have status **In Progress**, which means that data can be uploaded and downloaded by Unit staff, but not downloaded by a Researcher. You need to change the status to **Available** in order for Reasearcher users to be able to download. The basic command for changing/checking the project status is `dds project status`:
 
@@ -55,10 +55,14 @@ A project can be deleted in cases of incorrect project information or errors, an
 
 - [ ] TASK: Try to delete your project when it is in **In Progress** and **Available** and note the error messages.
 - [ ] TASK: Create a new project, upload some data in it and try to delete it without ever releasing it.
+- [ ] TASK: Use the project listing command with the option `--show-all` to see the list of projects including the deleted one.
 
 ## *Expired*
 
 Projects can be **Available** a certain (chosen by the units) period of time, Days in Available (DiA). After that their status automatically changes to **Expired**. Data cannot be changed in this state, but the project can be re-released op to *two times*. After two re-releases, a project can only be archived
+
+ToDO add task for checking project status history and note deadline
+- [ ] TASK: 
 
 ## *Archived*
 
@@ -67,4 +71,5 @@ A project can have status **Expired** a certain number of Days In Expired (DiE),
 Project archiving can be done manually by Unit account, using the commmand `dds project status archive`
 
 - [ ] TASK: Create a new project, upload some data in it and then archive it.
-- [ ] TASK: Use the project listing command with the option `--show-all` to see the list of projects including the archived ones.
+- [ ] TASK: Use the project listing command to confirm the project is archived.
+- [ ] TASK: Create a new project, upload some data in it and then archive it using the `--abort` option. Observe the optput of the command.
