@@ -72,8 +72,6 @@ When the project is created, you should get an output similar to the one below. 
 
 > There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
- - [ ] TASK: Run the create project command, remember to change the values for `--title`, `--description` and `--pi`
- - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm is shown in the output. Observe the information shown in the table.
 
 #### Upload data
 
@@ -110,9 +108,6 @@ ls -R data/
 
 On Windows, you can use the `dir` command or manually explore the structure through the File Explorer.
 
-
- - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
-
 > When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only ulpload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
 
 If you have forgotten the project ID, you can list all active projects to which you have access with the `ls` command, [see documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls) here.
@@ -142,7 +137,16 @@ dds data ls --project "<Project ID>" --tree
 
 ![Screenshot of the files structure in the project](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-data-ls-tree.svg)
 
- - [ ] TASK: Verify that all the data has being uploaded succesfully.
+###### Sub-section taks
+
+
+ - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
+
+ - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm is shown in the output. Observe the information shown in the table.
+
+ - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
+
+ - [ ] TASK: Use the ls command to verify that all the data has being uploaded succesfully.
 
 #### Release project and download data
 
@@ -204,9 +208,6 @@ data/example_directory_2/sub_directory_2/example_file_3.txt
 data/example_directory_2/example_file_5.txt
 ~~~
 
- - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
- - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
-
 #### Researchers
 
 In real scenarios, the data you've uploaded will be downloaded by researchers. To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the command:
@@ -219,8 +220,12 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 > It is also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
-
- - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
-
 > Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>" `
 
+###### Sub-section taks
+
+ - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
+ 
+ - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
+
+ - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
