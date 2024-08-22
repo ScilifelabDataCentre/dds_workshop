@@ -230,9 +230,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 ## Optional task - DDS Cli Token
 
-At the beggining of the session, we mentioned about the file generated when you first log in.
-
-In your home directory DDS will create a file that stores the token used to authenticate with the API. **It is important that this file is not shared**.
+At the beginning of the session, we mentioned about the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
 You can find this file, by default it will  be your home directory. And if you move it elsewhere, you will still be able to access the system by specifying the new route. For example:
 
