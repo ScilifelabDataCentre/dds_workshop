@@ -236,7 +236,7 @@ mv -Path "$HOME\.dds_cli_token" -Destination "$HOME\Desktop\"
 dds --token-path .\Desktop\dds_cli_token.txt user info
  ~~~
 
-> Note: On windows, you can also move this file manually using the file explorer if you are not comfortable with the terminal.
+> Note: On Windows, you can also move this file manually using the File Explorer if you are not comfortable with the terminal.
 
 ![Screenshot using the token path option](https://i.imgur.com/lq0E3UO.png)
 
