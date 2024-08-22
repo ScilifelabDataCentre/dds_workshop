@@ -146,30 +146,15 @@ dds data ls --project "<Project ID>" --tree
 
  - [ ] TASK: Use the ls command to verify that all the data has being uploaded succesfully.
 
-#### Release project and download data
+#### Download data
 
 > Currently DDS does not support to resume downloads, if your download is interrupted you will need to restart it.
 
-1. In order for researchers to get access to the data, you need to [change the status](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access) to `Available`. If a researcher tries to download data and the project is still in progress they will get an error.
 
-~~~
-dds project status release --project "<Project ID>"
-~~~
-
-![Message shown after project release](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-status-release.svg)
-##
-
-After releasing the project, any current researcher associated with the project will receive a notification by email.
-
-##
-3. To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
+To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
 ~~~
 dds data get --get-all --project "<Project ID>" 
 ~~~
-
-
-##
-4. Download specific contents
 
 There could be some scenarios where you don't need to get the full project contents. For that, there are two options you can use. You can use the `--source` option to specify which file or directory you want to download within the project. If you want to download multiple individual files or directories, specify the `--source` option multiple times.
 
