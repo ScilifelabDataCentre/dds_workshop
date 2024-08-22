@@ -9,6 +9,14 @@ You should have received a registration link from
 
 This link is to register a new account, in the testing instance and in a custom unit for this workshop. Open the link and create a new account.
 
+Search for an email, delivered this week, with contains the sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
+
+![Screenshot of searching for the invitation email](https://i.imgur.com/KpCbO0U.png)
+
+![Screenshot of the email text](https://i.imgur.com/jNRslTk.png)
+
+After finding the email, click on the link and follow the instruction to register a new account.
+
 Once that is done. Run
 ~~~
 dds auth login
