@@ -220,7 +220,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 > Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>" `
 
-##### DDS Cli Token
+##### DDS CLI Token
 
 At the beginning of the session, we mentioned about the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
