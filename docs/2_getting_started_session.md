@@ -77,9 +77,7 @@ When the project is created, you should get an output similar to the one below. 
 
 #### Upload data
 
-Go back to the Readme at the begining of the repository and follow the instruction to obtain the data for the hands-on session.
-
-[README](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md)
+Go to [the README](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md) and follow the instructions to obtain the data for the hands-on session.
 
  - [ ] TASK: Obtain the data.
 
