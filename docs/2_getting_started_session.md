@@ -237,7 +237,7 @@ And if you move this file from you home directory and put it elsewhere, you will
  ~~~
  # Linux / MacOS
 mv ~/.dds_cli_token ~/Desktop
-dds --token-path ~/.dds_cli_token user info
+dds --token-path ~/Desktop/.dds_cli_token user info
 
 # Windows PowerShell
 mv -Path "$HOME\.dds_cli_token" -Destination "$HOME\Desktop\"
