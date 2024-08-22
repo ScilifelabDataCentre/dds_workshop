@@ -213,7 +213,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
  - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
 
-##### Optioanl: DDS CLI Token
+##### Optional: DDS CLI Token
 
 At the beginning of the session, we mentioned the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
