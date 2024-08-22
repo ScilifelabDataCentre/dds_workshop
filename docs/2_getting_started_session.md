@@ -205,7 +205,15 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 > Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>" `
 
-##### DDS CLI Token
+###### Sub-section taks
+
+ - [ ] TASK: Release the project after making sure all the data was uploaded - remember to specify the correct project ID
+ 
+ - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
+
+ - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
+
+##### Optioanl: DDS CLI Token
 
 At the beginning of the session, we mentioned the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
@@ -225,13 +233,4 @@ dds --token-path .\Desktop\dds_cli_token.txt user info
 
 ![Screenshot using the token path option](https://i.imgur.com/lq0E3UO.png)
 
-
-###### Sub-section taks
-
- - [ ] TASK: Release the project after making sure all the data was uploaded - remember to specify the correct project ID
- 
- - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
-
- - [ ] Optional: Move the token file to another location and try to perfrom some operation specying it with the `--token-path` flag. 
-
- - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
+ - [ ] Optional: Move the token file to another location and try to perfrom some operation specying it with the `--token-path` flag.
