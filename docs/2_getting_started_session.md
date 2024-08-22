@@ -232,7 +232,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 At the beginning of the session, we mentioned about the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
-You can find this file, by default it will  be your home directory. And if you move it elsewhere, you will still be able to access the system by specifying the new route. For example:
+And if you move this file from you home directory and put it elsewhere, you will still be able to access the system by specifying the new path. For example:
 
  ~~~
  # Linux / MacOS
