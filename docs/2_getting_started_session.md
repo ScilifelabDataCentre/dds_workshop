@@ -1,6 +1,6 @@
-# 2. Registration and project access
+# 2. Getting started as a Unit User
 
-## A. Registration
+## A. Account registration and accessing the system
 
 
 You should have received a registration link from 
@@ -26,16 +26,21 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
 ![Screenshot of the login steps](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-auth-login.svg)
 
- - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it.
+After completing authentication, dds-cli will automatically save an authentication token file (.dds_cli_token) by default in your home directory. You have the possibility to specify the location and the filename of the token file, but we will explore this functionality in the end of this session
 
-#### Invite other Unit Staff
+ - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it. Make sure your password is a strong one.
+ - [ ] TASK: Display information about your just created account using the command `dds user info`. It is important to remember the username you've just chosen. We recommend usage of password management tool for handling your username and password. 
+ - [ ] TASK: Try to find the token file in you home directory and check its content.
+
+#### Inviting other Unit Staff
 
 When you are the first Unit Admin invited to a new unit, one of the first things to do will be to invite another Unit Admin. Otherwise the system will not allow you to create any projects and will return the following error message if you try to:
 
 ~~~
 ERROR    Failed to create project: Your unit does not have enough Unit Admins. At least two Unit Admins are required for a project to be created.
 ~~~
-To invite other unit staff, Unit Admins or Unit Personnel (Remember the diagram with the permissions showed in the presentation), you use the `dds user add` command like this:
+
+To invite other unit staff, Unit Admins or Unit Personnel (remember the diagram with the permissions showed in the presentation), you use the `dds user add` command like this:
 
 ~~~
 dds user add [Email address] --role "Unit Admin"
@@ -45,7 +50,9 @@ or
 dds user add [Email address] --role "Unit Personnel"
 ~~~
 
-## B. Project Access
+You will not need to do this today because you are all invited as Unit Admin.
+
+## B. Project creation, data upload, and invitation of Researchers
 
 #### Create a project
 
@@ -63,9 +70,10 @@ When the project is created, you should get an output similar to the one below. 
 
 > You can always retrieve the the **Project ID** using the command `dds ls` and then setting meaningful `--title` and `--description` will prove useful for you.
 
- - [ ] TASK: Run the create project command, remember to change the files of **title**, **description** and **pi**
-
 > There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
+
+ - [ ] TASK: Run the create project command, remember to change the values for `--title`, `--description` and `--pi`
+ - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm is shown in the output. Observe the information shown in the table.
 
 #### Upload data
 
