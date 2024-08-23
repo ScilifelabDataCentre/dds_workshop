@@ -191,6 +191,8 @@ data/example_directory_2/sub_directory_2/example_file_3.txt
 data/example_directory_2/example_file_5.txt
 ~~~
 
+ - [ ] TASK: Download the project contents, and verify that they are the correct. Observe the you can download data with your Unit Admin account while it has status *In Progress*. 
+
 #### Researchers
 
 In real scenarios, the data you've uploaded will be downloaded by researchers. To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the command:
@@ -199,19 +201,17 @@ In real scenarios, the data you've uploaded will be downloaded by researchers. T
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
 
-
-
 > It is also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
-> Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>" `
+> Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>"
 
-###### Sub-section taks
+Researchers can only download data from projects that have status *Available* (more on the project statuses in the next session). The general command for releasing a project is:
 
- - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
+~~~
+dds project status release --project "<Project ID>"
+~~~
 
- - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
-
-##### Optional: DDS CLI Token
+#### Working with the DDS CLI token file
 
 At the beginning of the session, we mentioned the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
 
@@ -231,4 +231,16 @@ dds --token-path .\Desktop\dds_cli_token.txt user info
 
 ![Screenshot using the token path option](https://i.imgur.com/lq0E3UO.png)
 
- - [ ] Optional: Move the token file to another location and try to perfrom some operation specying it with the `--token-path` flag.
+Using the `--token-path` option you can choose the location and the name of the token when you are authentication:
+
+~~~
+dds --token-path ~/.my_dds_token_unitadmin auth login
+~~~
+
+If you run this and authenticate yourself successfully, the client will create a token file named *.my_dds_token_unitadmin* in your home directory. However, when you then run other DDS commands, you need to explicitly point to this token file in each command, otherwise the token will not use it (remember, by default it is trying to use a file *.dds_cli_token*)
+
+ - [ ] Task: Move your existing (default) token file to another location and try to perfrom some operation specying it with the `--token-path` flag
+ - [ ] Task: Using your Unit Admin, invite yourself as a researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
+ - [ ] Task: Once you have registered the Researcher account, authenticate using the researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it .my_dds_token_researcher). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and 2FA code each time
+ - [ ] Task: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above
+ - [ ] Task: Download the data using your Researcher account (point the client to the token file you created in the third task)
