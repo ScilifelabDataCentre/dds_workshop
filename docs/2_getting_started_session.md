@@ -207,8 +207,28 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 ###### Sub-section taks
 
- - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID
- 
  - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
 
  - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
+
+##### Optional: DDS CLI Token
+
+At the beginning of the session, we mentioned the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
+
+If you move this file from your home directory and put it elsewhere, you will still be able to access the system by specifying the new path. For example:
+
+ ~~~
+ # Linux / MacOS
+mv ~/.dds_cli_token ~/Desktop
+dds --token-path ~/Desktop/.dds_cli_token user info
+
+# Windows PowerShell
+mv -Path "$HOME\.dds_cli_token" -Destination "$HOME\Desktop\"
+dds --token-path .\Desktop\dds_cli_token.txt user info
+ ~~~
+
+> Note: On Windows, you can also move this file manually using the File Explorer if you are not comfortable with the terminal.
+
+![Screenshot using the token path option](https://i.imgur.com/lq0E3UO.png)
+
+ - [ ] Optional: Move the token file to another location and try to perfrom some operation specying it with the `--token-path` flag.
