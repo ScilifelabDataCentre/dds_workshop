@@ -207,8 +207,6 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 ###### Sub-section taks
 
- - [ ] TASK: Release the project after making sure all the data was uploaded - remember to specify the correct project ID
- 
  - [ ] TASK: Download the project contents, and verify that they are the correct. You can download data with your unit admin account.
 
  - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a researcher. Once you have registered the "researcher" account, authenticate using the researcher account credentials and use the dds data get command as described above to download the data.
