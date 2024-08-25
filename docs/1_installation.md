@@ -12,16 +12,16 @@ They differ slightly depending on your operating system, so follow the section y
 
 ## Using the Test instance of DDS
 
-For today's hands on session you will be using the testing instance on DDS, instead of the the production one. In order to do this, you need to tell the client to use the correct URL.
+For today's hands on session you will be using the Test instance of DDS, instead of the Production one. In order to do this, you need to tell the client to use the correct URL.
 
-By default, the client uses the production instance with the URL: 
+By default, the client uses the Production instance with the URL: 
 
 > `https://delivery.scilifelab.se`
 
 You can see that URL in the output of any command you run.
  
  ![](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-help-2.svg)
-To set the CLI to point to the test instance you can run the following command in the terminal / command prompt / PowerShell (depending on your OS, see below).
+To set the CLI to point to the Test instance you can run the following command in the terminal / command prompt / PowerShell (depending on your OS, see below).
 
  ~~~
  # Linux / MacOS

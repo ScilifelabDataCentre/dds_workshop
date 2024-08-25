@@ -7,7 +7,7 @@ You should have received a registration link from
 
 > services-noreply@scilifelab.se
 
-This link is to register a new account, in the testing instance and in a custom unit for this workshop. Open the link and create a new account.
+This link is to register a new account, in the Test instance and in a custom unit for this workshop. Open the link and create a new account.
 
 Search for an email, delivered this week, with contains the sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
 
