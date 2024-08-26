@@ -43,7 +43,7 @@ dds project status release --project "<Project ID>"
 - [ ] TASK: Check the current project status and the status history.
 - [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a Researcher. Once you have registered the "Researcher" account, authenticate using the Researcher account credentials and use the dds data get command as described above to download the data.
 
-If the data in a project needs to be updated, you need to change the status back to **In Progress** unig the sub command `retract`.
+If the data in a project needs to be updated, you need to change the status back to **In Progress** using the sub command `retract`.
 
 - [ ] TASK: Try to upload data to your project when it still has status **Available** and observe the error message.
 - [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload.
