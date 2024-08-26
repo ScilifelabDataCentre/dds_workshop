@@ -70,7 +70,7 @@ When the project is created, you should get an output similar to the one below. 
 
 > You can always retrieve the **Project ID** using the command `dds ls` and this output shows the benefit of having set `--title` and `--description`.
 
-> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (researcher with elevated privileges), or `--researcher`, to automatically invite researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
+> There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (Researcher with elevated privileges), or `--researcher`, to automatically invite Researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
 
 #### Upload data
@@ -197,15 +197,15 @@ data/example_directory_2/example_file_5.txt
 
 #### Researchers
 
-In real scenarios, the data you've uploaded will be downloaded by researchers. To [invite researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the command:
+In real scenarios, the data you've uploaded will be downloaded by Researchers. To [invite Researchers](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-access-grant), you can use the command:
 
 ~~~
 dds user add [Email address] --role "Researcher" --project "<Project ID>"
 ~~~
 
-> It is also possible to automatically invite researchers when creating a project. `dds project create (...) --researcher [Email address]`
+> It is also possible to automatically invite Researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
-> Another command to invite researchers is `dds project access grant --project "<Project ID>" --email "<email>"
+> Another command to invite Researchers is `dds project access grant --project "<Project ID>" --email "<email>"
 
 Researchers can only download data from projects that have status *Available* (more on the project statuses in the next session). The general command for releasing a project is:
 
@@ -244,7 +244,7 @@ However, when you then run other DDS commands, you need to explicitly point to t
 (remember, by default it is trying to use a file *.dds_cli_token*).
 
  - [ ] Task: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag
- - [ ] Task: Using your Unit Admin, invite yourself as a researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
- - [ ] Task: Once you have registered the Researcher account, authenticate using the researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it .my_dds_token_researcher). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time
+ - [ ] Task: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
+ - [ ] Task: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it .my_dds_token_researcher). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time
  - [ ] Task: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above
  - [ ] Task: Download the data using your Researcher account (point the client to the token file you created in the third task)
