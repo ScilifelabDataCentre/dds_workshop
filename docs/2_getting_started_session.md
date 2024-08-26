@@ -138,7 +138,7 @@ dds data ls --project "<Project ID>" --tree
 
  - [ ] TASK: Obtain the data.
 
- - [ ] TASK: Run the create project command, remember to change the fields of **title**, **description** and **pi**
+ - [ ] TASK: Run the create project command, remember to change the values of `--title`, `--description` and `--pi`.
 
  - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm your project is shown in the output. Observe the information shown in the table.
 
