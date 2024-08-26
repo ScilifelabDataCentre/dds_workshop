@@ -9,15 +9,14 @@ You should have received a registration link from
 
 This link is to register a new account, in the Test instance and in a custom unit for this workshop. Open the link and create a new account.
 
-Search for an email, delivered this week, with contains the sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
+To search for this for email, which has being delivered this week, you can filter with the follwing sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
 
 ![Screenshot of searching for the invitation email](https://i.imgur.com/KpCbO0U.png)
 
 ![Screenshot of the email text](https://i.imgur.com/jNRslTk.png)
 
-After finding the email, click on the link and follow the instruction to register a new account.
 
-Once that is done. Run
+Once that is done. The command to log in is:
 ~~~
 dds auth login
 ~~~
@@ -28,7 +27,8 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
 After completing authentication, dds-cli will automatically save an authentication token file (.dds_cli_token) by default in your home directory. You have the possibility to specify the location and the filename of the token file, but we will explore this functionality in the end of this session.
 
- - [ ] TASK: Find the email and create an account and login using your information. Note that the password will not be shown while you are typing it. Make sure your password is a strong one.
+ - [ ] TASK: Find the email and create an account. Make sure your password is a strong one.
+ - [ ] TASK: Login using your information. Note that the password will not be shown while you are typing it. 
  - [ ] TASK: Display information about your just created account using the command `dds user info`. It is important to remember the username you've just chosen. We recommend usage of password management tool for handling your username and password. 
  - [ ] TASK: Try to find the token file in your home directory and check its content.
 
@@ -84,6 +84,8 @@ The general upload command is [`dds data put`.](https://scilifelabdatacentre.git
 dds data put --project "<Project ID>" --source "<File or directory to upload>"
 ~~~
 
+> When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only upload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
+
 > There are a number of other optional flags, which can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put).
 
 Check the folder which contains the data, on Mac/Linux, inside this repository.
@@ -104,8 +106,6 @@ ls -R data/
 > example_file_4.txt
 
 On Windows, you can use the `dir` command or manually explore the structure through the File Explorer.
-
-> When an upload is interrupted, you can resume it later on. The system will detect which files are already on the cloud and only upload the remaining ones. In order to replace them you must specify the `--overwrite` flag.
 
 If you have forgotten the project ID, you can list all active projects to which you have access with the `ls` command, [see documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-ls).
 
@@ -147,9 +147,6 @@ dds data ls --project "<Project ID>" --tree
  - [ ] TASK: Use the ls command to verify that all the data has being uploaded successfully.
 
 #### Download data
-
-> Currently, DDS does not support resuming downloads, if your download is interrupted you will need to restart it.
-
 
 To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
 ~~~
@@ -194,6 +191,8 @@ data/example_directory_2/example_file_5.txt
 ~~~
 
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
+
+> Currently, DDS does not support resuming downloads, if your download is interrupted you will need to restart it.
 
 #### Researchers
 
