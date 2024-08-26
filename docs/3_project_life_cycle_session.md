@@ -61,8 +61,7 @@ A project can be deleted in cases of incorrect project information or errors, an
 
 Projects are **Available** for a certain (chosen by the units) period of time, Days in Available (DiA). After that their status automatically changes to **Expired**. Data cannot be changed in this state, but the project can be re-released up to *two times*. After two re-releases, a project can only be archived.
 
-ToDO add task for checking project status history and note deadline
-- [ ] TASK: 
+- [ ] TASK: Check the current project status and the status history. Observe the deadline date for the current status.
 
 ## *Archived*
 
