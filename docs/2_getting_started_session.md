@@ -207,7 +207,7 @@ This directory contains 3 subdirectories: files; which is where the data has bei
 If there is an error during the download, send us the file generated inside the logs folder.
 
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
- - [ ] TASK: Observe the generated directory and navigate through it. Then try to download again to a new folder with the `--destination` flag.
+ - [ ] TASK: Observe the generated directory and navigate through it; check whether a log file exists in the *logs* directory. Then try to download again to a new folder with the `--destination` flag.
  - [ ] TASK: Try to download to the same destination again and observe what happens.
  - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download it first using the `--source` flag and then with the `--source-path-file`.
 
