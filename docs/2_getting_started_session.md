@@ -204,7 +204,7 @@ You can specify a custom directory to place the files, however, this folder must
 
 This directory contains 3 subdirectories: files; which is where the data has being downloaded, logs; which would contain the logs from the client in case something wrong happens and meta; which currently has no use. 
 
-If there is some error during the download, send us the file generated inside the logs folder.
+If there is an error during the download, send us the file generated inside the logs folder.
 
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
  - [ ] TASK: Observe the generated directory and navigate through it. Then try to download again to a new folder with the `--destination` flag.
