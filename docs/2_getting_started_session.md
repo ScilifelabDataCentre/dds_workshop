@@ -16,7 +16,7 @@ To search for this for email, which has bee sent earlier this week, you can sear
 ![Screenshot of the email text](https://i.imgur.com/jNRslTk.png)
 
 
-Once that is done. The command to log in is:
+Once that is done, the command to log in with the client is:
 ~~~
 dds auth login
 ~~~
