@@ -193,7 +193,23 @@ data/example_directory_2/sub_directory_2/example_file_3.txt
 data/example_directory_2/example_file_5.txt
 ~~~
 
+When the data is downloaded, by default, it will be placed in a new folder with a name with this format:
+
+~~~
+DataDelivery_{YEAR}-{MONTH}-{DAY}_{HOUR}-{MINUTE}-{SECOND}_{PROJECT}
+~~~
+For example: `DataDelivery_2024-08-26_16-46-47_workshop00001`
+
+You can specify a custom directory to place the files, however, this has to be a new folder. Otherwise the system will complain.
+
+This directory contains 3 subdirectories: files; which is where the data has being downloaded, logs; which would contain the logs from the client in case something wrong happens and meta; which currently has no use. 
+
+If there is some error during the download, send us the file generated inside the logs folder.
+
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
+ - [ ] TASK: Observe the generated directory and navigate through it. Then try to download again to a new folder with the `--destination` flag.
+ - [ ] TASK: Try again the to download to the same destination and observe what happens.
+ - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download first using the `--source` flag and then with the `--source-path-file`.
 
 #### Researchers
 
