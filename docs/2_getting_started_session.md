@@ -208,7 +208,7 @@ If there is an error during the download, send us the file generated inside the 
 
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
  - [ ] TASK: Observe the generated directory and navigate through it. Then try to download again to a new folder with the `--destination` flag.
- - [ ] TASK: Try again the to download to the same destination and observe what happens.
+ - [ ] TASK: Try to download to the same destination again and observe what happens.
  - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download first using the `--source` flag and then with the `--source-path-file`.
 
 #### Researchers
