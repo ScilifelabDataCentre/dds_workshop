@@ -202,7 +202,10 @@ For example: `DataDelivery_2024-08-26_16-46-47_workshop00001`
 
 You can specify a custom directory to place the files, however, this folder must not already exist. Otherwise the system will complain.
 
-This directory contains 3 subdirectories: files; which is where the data has being downloaded, logs; which would contain the logs from the client in case something wrong happens and meta; which currently has no use. 
+This directory contains 3 subdirectories: 
+- files, which contains the downloaded data
+- logs, which contains the logs from the client if there is an issue 
+- meta, which currently has no use
 
 If there is an error during the download, send us the file generated inside the logs folder.
 
