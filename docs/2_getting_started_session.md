@@ -192,7 +192,26 @@ data/example_directory_2/sub_directory_2/example_file_3.txt
 data/example_directory_2/example_file_5.txt
 ~~~
 
+When the data is downloaded, by default, it will be placed in a new folder with a name with this format:
+
+~~~
+DataDelivery_{YEAR}-{MONTH}-{DAY}_{HOUR}-{MINUTE}-{SECOND}_{PROJECT}
+~~~
+For example: `DataDelivery_2024-08-26_16-46-47_workshop00001`
+
+You can specify a custom directory to place the files, however, this folder must not already exist. Otherwise the system will complain.
+
+This directory contains 3 subdirectories: 
+- files, which contains the downloaded data
+- logs, which contains the logs from the client if there is an issue 
+- meta, which currently has no use
+
+If there is an error during the download, send us the file generated inside the logs folder.
+
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
+ - [ ] TASK: Observe the generated directory and navigate through it; check whether a log file exists in the *logs* directory. Then try to download again to a new folder with the `--destination` flag.
+ - [ ] TASK: Try to download to the same destination again and observe what happens.
+ - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download it first using the `--source` flag and then with the `--source-path-file`.
 
 > Currently, DDS does not support resuming downloads, if your download is interrupted you will need to restart it.
 
