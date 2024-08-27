@@ -200,7 +200,7 @@ DataDelivery_{YEAR}-{MONTH}-{DAY}_{HOUR}-{MINUTE}-{SECOND}_{PROJECT}
 ~~~
 For example: `DataDelivery_2024-08-26_16-46-47_workshop00001`
 
-You can specify a custom directory to place the files, however, this has to be a new folder. Otherwise the system will complain.
+You can specify a custom directory to place the files, however, this folder must not already exist. Otherwise the system will complain.
 
 This directory contains 3 subdirectories: files; which is where the data has being downloaded, logs; which would contain the logs from the client in case something wrong happens and meta; which currently has no use. 
 
