@@ -41,13 +41,13 @@ dds project status release --project "<Project ID>"
 - [ ] TASK: Explore the `dds project status` command sub commands and their options by running them without specifying a particular project.
 - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID.
 - [ ] TASK: Check the current project status and the status history.
-- [ ] Optional: If you have another email address, use your Unit Admin / Personnel account to invite that email as a Researcher. Once you have registered the "Researcher" account, authenticate using the Researcher account credentials and use the dds data get command as described above to download the data.
+- [ ] Task: Use your Researcher account token file to run the `dds data get` command as described above and download the data.
 
 If the data in a project needs to be updated, you need to change the status back to **In Progress** using the sub command `retract`.
 
 - [ ] TASK: Try to upload data to your project when it still has status **Available** and observe the error message.
-- [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload.
-- [ ] Optional: If you did the previous optional task, try to download data again while the project is still **In Progress**.
+- [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload. Observe the error messages when you try to upload the same data and when using the `--overwrite` option.
+- [ ] Task: Try to download data again as a Researcher while the project is still **In Progress**.
 
 ## *Deleted*
 
@@ -61,8 +61,7 @@ A project can be deleted in cases of incorrect project information or errors, an
 
 Projects are **Available** for a certain (chosen by the units) period of time, Days in Available (DiA). After that their status automatically changes to **Expired**. Data cannot be changed in this state, but the project can be re-released up to *two times*. After two re-releases, a project can only be archived.
 
-ToDO add task for checking project status history and note deadline
-- [ ] TASK: 
+- [ ] TASK: Check the current project status and the status history. Observe the deadline date for the current status.
 
 ## *Archived*
 
