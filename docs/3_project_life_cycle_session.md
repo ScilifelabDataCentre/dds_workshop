@@ -41,7 +41,7 @@ dds project status release --project "<Project ID>"
 - [ ] TASK: Explore the `dds project status` command sub commands and their options by running them without specifying a particular project.
 - [ ] TASK: Release the project after making sure all the data was uploaded, remember to specify the correct project ID.
 - [ ] TASK: Check the current project status and the status history.
-- [ ] Task: Use your Researcher account token file to run the dds data get command as described above and download the data.
+- [ ] Task: Use your Researcher account token file to run the `dds data get` command as described above and download the data.
 
 If the data in a project needs to be updated, you need to change the status back to **In Progress** using the sub command `retract`.
 
