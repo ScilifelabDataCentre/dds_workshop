@@ -51,7 +51,7 @@ If the data in a project needs to be updated, you need to change the status back
 
 ## *Deleted*
 
-A project can be deleted in cases of incorrect project information or errors, and as a result, all the data from the cloud, as well as all the metadata from the database get deleted irreversibly. This action is only possible for projects in **In Progress** that have not been previously released. The command for deleting a project is `dds project delete`
+A project can be deleted in cases of incorrect project information or errors, and as a result, all the data from the cloud, as well as all the metadata from the database get deleted irreversibly. This action is only possible for projects in **In Progress** that have not been previously released. The command for deleting a project is `dds project status delete`
 
 - [ ] TASK: Try to delete your project when it is in **In Progress** and **Available** and note the error messages.
 - [ ] TASK: Create a new project, upload some data in it and try to delete it without ever releasing it.
