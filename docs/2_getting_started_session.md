@@ -11,7 +11,7 @@ You should have received a registration link from
 
 This link is to register a new account, in the Test instance and in a custom unit for this workshop. Open the link and create a new account.
 
-To search for the email, which was sent earlier this week, search your mailbox for the following sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
+The email, which was sent earlier this week, can be found in your mailbox by searching for the following sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
 
 ![Screenshot of searching for the invitation email](https://i.imgur.com/KpCbO0U.png)
 
