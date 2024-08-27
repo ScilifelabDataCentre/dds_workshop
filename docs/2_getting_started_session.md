@@ -28,7 +28,7 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 After completing authentication, dds-cli will automatically save an authentication token file (.dds_cli_token) by default in your home directory. You have the possibility to specify the location and the filename of the token file, but we will explore this functionality in the end of this session.
 
  - [ ] TASK: Find the email and create an account. Make sure your password is a strong one.
- - [ ] TASK: Login using your information. Note that the password will not be shown while you are typing it. 
+ - [ ] TASK: Log in using your information. Note that the password will not be shown while you are typing it. 
  - [ ] TASK: Display information about your just created account using the command `dds user info`. It is important to remember the username you've just chosen. We recommend usage of password management tool for handling your username and password. 
  - [ ] TASK: Try to find the token file in your home directory and check its content.
 
