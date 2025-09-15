@@ -1,4 +1,4 @@
-# DDS Unit User's Workshop
+# DDS Unit User's Workshop -- Beginner level
 
 This repository contains the instructions for the hands-on sessions during the workshop for SciLifeLab Unit Users
 (Autumn 2024).
