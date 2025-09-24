@@ -31,7 +31,7 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
 After completing authentication, dds-cli will automatically save an authentication token file (.dds_cli_token) by default in your home directory. You have the possibility to specify the location and the filename of the token file, but we will explore this functionality in the end of this session.
 
-###### Sub-section tasks
+###### Subsection tasks
  - [ ] TASK: Find the email and create an account. Make sure your password is a strong one.
  - [ ] TASK: Log in using your credentials. Note that the password will not be shown while you are typing it.
  - [ ] TASK: Display information about your just created account using the command `dds user info`. It is important to remember the username you've just chosen. We recommend usage of password management tool for handling your username and password. 
@@ -73,14 +73,14 @@ When the project is created, you should get an output similar to the one below. 
 
 ![Screenshot of a successful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
-> You can always retrieve the **Project ID** using the command `dds ls` and this output shows the benefit of having set meaningful `--title` and `--description`.
+> You can always retrieve the **Project ID** using the command `dds ls` and this output shows the benefit of having set a meaningful `--title` and `--description`.
 
 > There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (Researcher with elevated privileges), or `--researcher`, to automatically invite Researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
 
 #### Data upload
 
-Instructions for obtaining the workshop data can be found in [the README](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md).
+Instructions for obtaining the workshop data can be found in the [README file](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md).
 
 After creating a project, it will have status "In progress", which means that data can be uploaded, but not downloaded.
 
@@ -139,7 +139,7 @@ dds data ls --project "<Project ID>" --tree
 
 ![Screenshot of the files structure in the project](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-data-ls-tree.svg)
 
-###### Sub-section tasks
+###### Subsection tasks
 
  - [ ] TASK: Obtain the data.
 
@@ -213,7 +213,7 @@ A log file containing the whole `dds` command that's been run, and all the clien
 
 If there is an error during the download, send us the file generated inside the logs folder.
 
-###### Sub-section tasks
+###### Subsection tasks
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
  - [ ] TASK: Observe the generated directory and navigate through it; check whether a log file exists in the *logs* directory. Then try to download again to a new folder with the `--destination` flag.
  - [ ] TASK: Try to download to the same destination again and observe what happens.
@@ -271,7 +271,7 @@ If you run this and authenticate yourself successfully, the client will create a
 However, when you then run other DDS commands, you need to explicitly point to this token file in each command, otherwise the token will not be used 
 (remember, by default it is trying to use a file *.dds_cli_token*).
 
-###### Sub-section tasks
+###### Subsection tasks
  - [ ] TASK: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag
  - [ ] TASK: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
  - [ ] TASK: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it **.my_dds_token_researcher**). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time
