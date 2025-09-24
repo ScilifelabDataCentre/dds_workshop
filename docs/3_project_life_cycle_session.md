@@ -40,15 +40,20 @@ dds project status release --project "<Project ID>"
 
 ###### Subsection tasks
 - [ ] TASK: Explore the `dds project status` command subcommands and their options by running them without specifying a particular project.
+
 - [ ] TASK: Release the project after making sure all the data is uploaded; remember to specify the correct project ID.
+
 - [ ] TASK: Check the current project status and the status history.
+
 - [ ] Task: Use your *Researcher* account token file to run the `dds data get` command as described above and download the data.
 
 If the data in a project needs to be updated, you need to change the status back to **In Progress** using the subcommand `retract`.
 
 ###### Subsection tasks
 - [ ] TASK: Try to upload data to your project when it still has status **Available** and observe the error message.
+
 - [ ] TASK: Use the `dds project status retract` command to change back its status and make a new upload. Observe the error messages when you try to upload the same data and when using the `--overwrite` option.
+
 - [ ] Task: Try to download data again as a *Researcher* while the project is still **In Progress**.
 
 ## *Deleted*
@@ -57,7 +62,9 @@ A project can be deleted in cases of incorrect project information or errors, an
 
 ###### Subsection tasks
 - [ ] TASK: Try to delete your project when it is in **In Progress** and **Available** and note the error messages.
+
 - [ ] TASK: Create a new project, upload some data in it and try to delete it without ever releasing it.
+
 - [ ] TASK: Use the project listing command with the option `--show-all` to see the list of projects including the deleted one.
 
 ## *Expired*
@@ -75,5 +82,7 @@ Project archiving can be done manually by a *Unit* account, using the command `d
 
 ###### Subsection tasks
 - [ ] TASK: Create a new project, upload some data to it and then archive it.
+
 - [ ] TASK: Use the project listing command to confirm the project is archived.
+
 - [ ] TASK: Create a new project, upload some data in it and then archive it using the `--abort` option. Observe the output of the command.
