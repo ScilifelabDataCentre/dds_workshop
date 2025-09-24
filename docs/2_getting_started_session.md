@@ -215,8 +215,11 @@ If there is an error during the download, send us the file generated inside the 
 
 ###### Subsection tasks
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
+
  - [ ] TASK: Observe the generated directory and navigate through it; check whether a log file exists in the *logs* directory. Then try to download again to a new folder with the `--destination` flag.
+
  - [ ] TASK: Try to download to the same destination again and observe what happens.
+
  - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download it first using the `--source` flag and then with the `--source-path-file`.
 
 > Currently, DDS does not support resuming downloads, if your download is interrupted you will need to restart it.
@@ -272,8 +275,12 @@ However, when you then run other DDS commands, you need to explicitly point to t
 (remember, by default it is trying to use a file *.dds_cli_token*).
 
 ###### Subsection tasks
- - [ ] TASK: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag
- - [ ] TASK: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
- - [ ] TASK: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it **.my_dds_token_researcher**). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time
- - [ ] TASK: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above
- - [ ] TASK: Download the data using your Researcher account (point the client to the token file you created in the third task)
+ - [ ] TASK: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag.
+
+ - [ ] TASK: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop.
+
+ - [ ] TASK: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it **.my_dds_token_researcher**). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time.
+
+ - [ ] TASK: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above.
+
+ - [ ] TASK: Download the data using your Researcher account (point the client to the token file you created in the third task).
