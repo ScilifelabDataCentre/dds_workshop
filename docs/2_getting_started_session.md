@@ -57,7 +57,7 @@ dds user add [Email address] --role "Unit Personnel"
 
 **Note:** For this workshop, you can skip this step since all participants have already been set up with Unit Admin privileges.
 
-## B. Project creation, data upload, and invitation of Researchers
+## B. Projects - creation, data upload, and invitation of *Researchers*
 
 #### Project creation
 

@@ -27,18 +27,18 @@ According to the event, our **preliminary agenda** is:
 - Currently CLI which communicates to API 
 - Currently building GUI -- status of this at the end of the day 
 
-# 10:00-10:45: Registration, client installation
+# 10:00-10:45: Client installation
 
-- They should have gotten invites to the dev / testing (??) instance
-- Guide them through how they register 
 - How do they install the CLI? 
     - Options: PyPI or executable
     - If PyPI: create a venv first
     - If executable: make actually executable
 - How to log in 
 
-# 11:00-12:00: Projects
+# 11:00-12:00: Getting started, Projects
 
+- They should have gotten invites to the dev / testing (??) instance
+- Guide them through how they register
 - DDS is project centred -- need a project for everything 
 - Step by step of delivery flow + hands-on
     1. Create project
