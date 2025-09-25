@@ -34,8 +34,9 @@ set  DDS_CLI_ENV=test-instance
 $env:DDS_CLI_ENV  =  'test-instance'
  ~~~
 
-
-Run the help or version command again and verify that the output contains
+###### Subsection tasks
+ - [ ] TASK: Run one of the above commands, depending on the OS you are working on.
+ - [ ] TASK: Use the help DDS command again and verify that the output contains
  `https://testing.delivery.scilifelab.se/` 
 and **not** 
-`https://delivery.scilifelab.se/`
+`https://delivery.scilifelab.se/`.
