@@ -10,7 +10,7 @@ You should have received an invitation with a registration link from
 
 > services-noreply@scilifelab.se
 
-This link is to register a new account in the Testing instance and in a custom unit for this workshop.
+This link will lead you to a registration form for a new account in the Testing instance within a custom unit created for this workshop.
 
 The email, which was sent earlier this week, can be found in your mailbox by searching for the following sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
 
@@ -18,7 +18,7 @@ The email, which was sent earlier this week, can be found in your mailbox by sea
 
 ![Screenshot of the email text](https://i.imgur.com/jNRslTk.png)
 
-The registration involves choise of a username and password. Please, make sure to remember your username and to choose a strong password. Usage of password manager is recommended.
+The registration involves choise of a **username** and **password**. Please, make sure to remember your username and to choose a strong password. Usage of password manager is recommended.
 
 Once that is done, the command to log in with the client is:
 ~~~
@@ -55,7 +55,7 @@ or
 dds user add [Email address] --role "Unit Personnel"
 ~~~
 
-**Note:** For this workshop, you can skip this step since all participants have already been set up with Unit Admin privileges.
+**Note:** For this workshop, it won't be necessary since all participants have already been set up with Unit Admin privileges.
 
 ## B. Projects - creation, data upload, and invitation of *Researchers*
 

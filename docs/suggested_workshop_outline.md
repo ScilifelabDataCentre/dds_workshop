@@ -3,7 +3,7 @@ According to the event, our **preliminary agenda** is:
 09:00-09:30: Coffee
 09:30-09:40: Welcome & Practical info
 09:40-10:00: Intro to DDS
-10:00-10:45: Registration, client installation
+10:00-10:45: Client installation and DDS instance setup
 10:45-11:00: Coffee
 11:00-12:00: Projects
 12:00-13:00: Lunch
@@ -27,13 +27,18 @@ According to the event, our **preliminary agenda** is:
 - Currently CLI which communicates to API 
 - Currently building GUI -- status of this at the end of the day 
 
-# 10:00-10:45: Client installation
-
-- How do they install the CLI? 
+# 10:00-10:45: Client installation and DDS instance setup
+- How to install the CLI?
     - Options: PyPI or executable
     - If PyPI: create a venv first
     - If executable: make actually executable
-- How to log in 
+- Possible pitfalls
+    - Python version (should be 3.8 or higher)
+    - Dependencies issues - **venv** as a solution
+- DDS instance
+    - What is it?
+    - How to know which one is currently used by the client?
+    - How to "tell" the client which one to use?
 
 # 11:00-12:00: Getting started, Projects
 

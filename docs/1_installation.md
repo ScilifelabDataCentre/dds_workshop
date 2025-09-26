@@ -1,4 +1,8 @@
-# 1. Installation
+# 1. Client installation and DDS instance setup
+
+As we just mentioned, you use the DDS by interacting with command line application, which we call **client**, or **CLI**. This is simply a computer program, which everyone nowadays calls an app, that needs to be installed on you computer.
+
+## A. Client installation
 
 The instructions for installation are available in our documentation, [accessible here.](https://scilifelabdatacentre.github.io/dds_cli/#install-the-command-line-interface-cli-dds-cli)
 
@@ -10,7 +14,7 @@ They differ slightly depending on your operating system, so follow the section y
 
 ![enter image description here](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-version.svg)
 
-## Using the Test instance of DDS
+# B. Configure the client to use the Test instance of DDS
 
 For today's hands on session you will be using the Test instance of DDS, instead of the Production one. In order to do this, you need to tell the client to use the correct URL.
 
