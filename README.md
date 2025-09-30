@@ -26,7 +26,7 @@ Unpack/unzip the files locally.
 [Client installation: instructions](https://github.com/ScilifelabDataCentre/dds_workshop/blob/workshop-oct-2025/docs/1_installation.md)
 
 ## Hands-on session 2
-[Getting started, accounts and projects: instructions](https://github.com/ScilifelabDataCentre/dds_workshop/blob/workshop-oct-2025/docs/1_installation.md)
+[Getting started, accounts and projects: instructions](https://github.com/ScilifelabDataCentre/dds_workshop/blob/workshop-oct-2025/docs/2_getting_started_session.md)
 
 ## Hands-on session 3
-[Project life cycle: instructions](https://github.com/ScilifelabDataCentre/dds_workshop/blob/workshop-oct-2025/docs/1_installation.md)
+[Project life cycle: instructions](https://github.com/ScilifelabDataCentre/dds_workshop/blob/workshop-oct-2025/docs/3_project_life_cycle_session.md)
