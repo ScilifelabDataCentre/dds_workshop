@@ -1,23 +1,23 @@
 According to the event, our **preliminary agenda** is: 
 
-09:00-09:30: Coffee
-09:30-09:40: Welcome & Practical info
-09:40-10:00: Intro to DDS
-10:00-10:45: Client installation and DDS instance setup
-10:45-11:00: Coffee
-11:00-12:00: Projects
-12:00-13:00: Lunch
-13:00-13:45: Project life cycle
-13:45-14:00: Break
-14:00-15:00: Support model, future development, feedback
+- 09:00-09:30: Coffee
+- 09:30-09:40: Welcome & Practical info
+- 09:40-10:00: Intro to DDS
+- 10:00-10:45: Client installation and DDS instance setup
+- 10:45-11:00: Coffee
+- 11:00-12:00: Projects
+- 12:00-13:00: Lunch
+- 13:00-13:45: Project life cycle
+- 13:45-14:00: Break
+- 14:00-15:00: Support model, future development, feedback
 
 # 09:30-09:40: Welcome & Practical info
 
 - Who are we
 - Agenda
-- Breaks
-- Other
-    - Fire exits? 
+- Fire exits and bathrooms
+- Learning objectives
+- Who is in this group
 
 # 09:40-10:00: Intro to DDS
 
