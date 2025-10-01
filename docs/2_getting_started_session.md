@@ -1,15 +1,16 @@
 # 2. Getting started as a Unit User
 
-Welcome to the first lab session! As you work through the tasks, you might occasionally feel unsure about a command or need additional guidance. If that happens, remember that you can always use the `--help` flag to access helpful documentation directly in the terminal. For instance, running `dds project --help` will display detailed information about the command. This information is the same as what you'll find on the official documentation site at [scilifelabdatacentre.github.io/dds_cli](https://scilifelabdatacentre.github.io/dds_cli/), making it a convenient way to get quick insights throughout the workshop..
+Welcome to the first lab session!
 
 ## A. Account registration and accessing the system
 
+Account registration in DDS is only possible through an invitation link sent via email.
 
-You should have received a registration link from 
+You should have received an invitation with a registration link from
 
 > services-noreply@scilifelab.se
 
-This link is to register a new account, in the Test instance and in a custom unit for this workshop. Open the link and create a new account.
+This link will lead you to a registration form for a new account in the Testing instance within a custom unit created for this workshop.
 
 The email, which was sent earlier this week, can be found in your mailbox by searching for the following sentence: `You have been invited to join the SciLifeLab Data Delivery System (DDS)`
 
@@ -17,6 +18,7 @@ The email, which was sent earlier this week, can be found in your mailbox by sea
 
 ![Screenshot of the email text](https://i.imgur.com/jNRslTk.png)
 
+The registration involves choise of a **username** and **password**. Please, make sure to remember your username and to choose a strong password. Usage of password manager is recommended.
 
 Once that is done, the command to log in with the client is:
 ~~~
@@ -29,8 +31,9 @@ Examples on how to use it are available in the [documentation.](https://scilifel
 
 After completing authentication, dds-cli will automatically save an authentication token file (.dds_cli_token) by default in your home directory. You have the possibility to specify the location and the filename of the token file, but we will explore this functionality in the end of this session.
 
+###### Subsection tasks
  - [ ] TASK: Find the email and create an account. Make sure your password is a strong one.
- - [ ] TASK: Log in using your information. Note that the password will not be shown while you are typing it. 
+ - [ ] TASK: Log in using your credentials. Note that the password will not be shown while you are typing it.
  - [ ] TASK: Display information about your just created account using the command `dds user info`. It is important to remember the username you've just chosen. We recommend usage of password management tool for handling your username and password. 
  - [ ] TASK: Try to find the token file in your home directory and check its content.
 
@@ -42,7 +45,7 @@ When you are the first Unit Admin invited to a new unit, one of the first things
 ERROR    Failed to create project: Your unit does not have enough Unit Admins. At least two Unit Admins are required for a project to be created.
 ~~~
 
-To invite other unit staff, Unit Admins or Unit Personnel (remember the diagram with the permissions showed in the presentation), you use the `dds user add` command like this:
+To invite other unit staff, Unit Admins or Unit Personnel (remember the diagram with the permissions showed in the presentation), you can use the `dds user add` command like this:
 
 ~~~
 dds user add [Email address] --role "Unit Admin"
@@ -52,11 +55,11 @@ or
 dds user add [Email address] --role "Unit Personnel"
 ~~~
 
-You will not need to do this today because you are all invited as Unit Admin.
+**Note:** For this workshop, it won't be necessary since all participants have already been set up with Unit Admin privileges.
 
-## B. Project creation, data upload, and invitation of Researchers
+## B. Projects - creation, data upload, and invitation of *Researchers*
 
-#### Create a project
+#### Project creation
 
 The command for creating a project has the following general syntax:
 
@@ -70,14 +73,14 @@ When the project is created, you should get an output similar to the one below. 
 
 ![Screenshot of a successful project creation](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-project-create.svg)
 
-> You can always retrieve the **Project ID** using the command `dds ls` and this output shows the benefit of having set `--title` and `--description`.
+> You can always retrieve the **Project ID** using the command `dds ls` and this output shows the benefit of having set a meaningful `--title` and `--description`.
 
 > There are other flags that can be passed down, like `--owner` to add a user as a Project Owner (Researcher with elevated privileges), or `--researcher`, to automatically invite Researcher users to the project. The list and description can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/project/#dds-project-create) linked here.
 
 
-#### Upload data
+#### Data upload
 
-Go to [the README](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md) and follow the instructions to obtain the data for the hands-on session.
+Instructions for obtaining the workshop data can be found in the [README file](https://github.com/ScilifelabDataCentre/dds_workshop/blob/main/README.md).
 
 After creating a project, it will have status "In progress", which means that data can be uploaded, but not downloaded.
 
@@ -90,7 +93,7 @@ dds data put --project "<Project ID>" --source "<File or directory to upload>"
 
 > There are a number of other optional flags, which can be found in the [documentation](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-put).
 
-Check the folder which contains the data, on Mac/Linux, inside this repository.
+On MacOS/Linux, the content of the data directory can be checked with the `ls` command (the `-R` option lists recursively all subdirectories).
 ~~~
 ls -R data/
 ~~~
@@ -121,9 +124,9 @@ dds project ls
 > `tar -czf data.zip data/` for compression. 
 > `tar -xzf data.zip` for decompression.  
 
-#### List contents
+#### Project content listing
 
-You can interactively list the contents of a project with the [`ls` command:](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-ls)
+You can interactively list the contents of a project with the [`dds data ls` command:](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-ls)
 ~~~
 dds data ls --project "<Project ID>"
 ~~~
@@ -136,21 +139,21 @@ dds data ls --project "<Project ID>" --tree
 
 ![Screenshot of the files structure in the project](https://scilifelabdatacentre.github.io/dds_cli/_images/dds-data-ls-tree.svg)
 
-###### Sub-section tasks
+###### Subsection tasks
 
  - [ ] TASK: Obtain the data.
 
  - [ ] TASK: Run the create project command, remember to change the values of `--title`, `--description` and `--pi`.
 
- - [ ] TASK: Use the command `dds ls` or `dds project ls` to confirm your project is shown in the output. Observe the information shown in the table.
+ - [ ] TASK: Use the command `dds ls` and/or `dds project ls` to confirm your project is shown in the output. Observe the information shown in the table.
 
- - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the command above
+ - [ ] TASK: Upload the files in the data folder. Remember to change the **project ID** and the **source** from the example command above.
 
- - [ ] TASK: Use the ls command to verify that all the data has being uploaded successfully.
+ - [ ] TASK: Use the `dds data ls` command to verify that all the data has being uploaded successfully.
 
-#### Download data
+#### Downloading data
 
-To [download](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) the full project contents:
+Full project contents can be [downloaded](https://scilifelabdatacentre.github.io/dds_cli/data/#dds-data-get) with a command like this one:
 ~~~
 dds data get --get-all --project "<Project ID>" 
 ~~~
@@ -176,7 +179,7 @@ dds data get
     --project "<Project ID>"
 ~~~
 
-You can pack all these different source routes with the spf option:
+You can pack all these different source routes with the `--source-path-file` option:
 
 ~~~
 dds data get 
@@ -202,15 +205,21 @@ For example: `DataDelivery_2024-08-26_16-46-47_workshop00001`
 You can specify a custom directory to place the files, however, this folder must not already exist. Otherwise the system will complain.
 
 This directory contains 3 subdirectories: 
-- files, which contains the downloaded data
-- logs, which contains the logs from the client if there is an issue 
-- meta, which currently has no use
+- **files**, which contains the downloaded data
+- **logs**, which contains the logs from the client 
+- **meta**, which currently has no use
+
+A log file containing the whole `dds` command that's been run, and all the client output, is always created the **logs** subdirectory. Additional file with **.json** extension is created only when error(s) had occured during upload/download.
 
 If there is an error during the download, send us the file generated inside the logs folder.
 
+###### Subsection tasks
  - [ ] TASK: Download the project contents, and verify that they are correct. Observe that you can download data with your Unit Admin account while it has status *In Progress*. 
+
  - [ ] TASK: Observe the generated directory and navigate through it; check whether a log file exists in the *logs* directory. Then try to download again to a new folder with the `--destination` flag.
+
  - [ ] TASK: Try to download to the same destination again and observe what happens.
+
  - [ ] TASK: Download only the file `example_file_4.txt`. You need to inspect the project to find its path. Download it first using the `--source` flag and then with the `--source-path-file`.
 
 > Currently, DDS does not support resuming downloads, if your download is interrupted you will need to restart it.
@@ -225,7 +234,7 @@ dds user add [Email address] --role "Researcher" --project "<Project ID>"
 
 > It is also possible to automatically invite Researchers when creating a project. `dds project create (...) --researcher [Email address]`
 
-> Another command to invite Researchers is `dds project access grant --project "<Project ID>" --email "<email>"
+> Another command to invite Researchers is `dds project access grant --project <Project ID> --email <email>`
 
 Researchers can only download data from projects that have status *Available* (more on the project statuses in the next session). The general command for releasing a project is:
 
@@ -235,7 +244,9 @@ dds project status release --project "<Project ID>"
 
 #### Working with the DDS CLI token file
 
-At the beginning of the session, we mentioned the authentication token file generated in your home directory when you log in. **It is important that this file is kept safe and not shared**.
+At the beginning of the session, we mentioned the authentication token file generated in your home directory (by default) when you log in. The default name of this file is **.dds_cli_token**.
+
+ **ATTENTION: it is important that this file is kept safe and never shared with anyone**.
 
 If you move this file from your home directory and put it elsewhere, you will still be able to access the system by specifying the new path. For example:
 
@@ -263,8 +274,13 @@ If you run this and authenticate yourself successfully, the client will create a
 However, when you then run other DDS commands, you need to explicitly point to this token file in each command, otherwise the token will not be used 
 (remember, by default it is trying to use a file *.dds_cli_token*).
 
- - [ ] Task: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag
- - [ ] Task: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop
- - [ ] Task: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it .my_dds_token_researcher). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time
- - [ ] Task: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above
- - [ ] Task: Download the data using your Researcher account (point the client to the token file you created in the third task)
+###### Subsection tasks
+ - [ ] TASK: Move your existing (default) token file to another location and try to perform some operation specifying it with the `--token-path` flag.
+
+ - [ ] TASK: Using your Unit Admin, invite yourself as a Researcher. To do this, send the invitation to the same email address with a **+** sign added (my_email+@example.com), and you will receive the invitation at the same email address which we invited for this workshop.
+
+ - [ ] TASK: Once you have registered the Researcher account, authenticate using the Researcher account credentials and using the `--token-path` to specify a separate token file as in the example above (you can name it **.my_dds_token_researcher**). This will allow you to switch between your Unit Admin and your Researcher accounts without entering credentials and a 2FA code each time.
+
+ - [ ] TASK: Release your project using your Unit Admin account (point the client to your original token file) using the command shown above.
+
+ - [ ] TASK: Download the data using your Researcher account (point the client to the token file you created in the third task).
