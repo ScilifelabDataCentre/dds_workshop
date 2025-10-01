@@ -1,6 +1,6 @@
 # 2. Getting started as a Unit User
 
-Welcome to the first lab session! When you need help with any command as you work through the tasks, use the `--help` flag to access helpful documentation directly in the terminal. For instance, running `dds project --help` will display detailed information about that specific command. This information matches what is available on the official documentation site at [scilifelabdatacentre.github.io/dds_cli](https://scilifelabdatacentre.github.io/dds_cli/), making it a convenient way to get quick access to guidance throughout the workshop.
+Welcome to the first lab session!
 
 ## A. Account registration and accessing the system
 
